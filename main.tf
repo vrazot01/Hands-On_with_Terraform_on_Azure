@@ -8,7 +8,7 @@ terraform {
   cloud {
     organization = "jan2025training"
     workspaces {
-      name = "remotestate"
+      name = "TerraformCI"
     }
   }
 }
