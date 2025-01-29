@@ -66,13 +66,7 @@ jobs:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v4
-    # install azure cli - not part of the class, but i was getting an azure cli error, so copilot suggested the following lines  
-    - name: Set up Azure CLI
-      uses: azure/CLI@v1
-      with:
-        azcliversion: '2.0.79'
-        inlineScript: |
-          az version
+
     # Install the latest version of Terraform CLI and configure the Terraform CLI configuration file with a Terraform Cloud user API token
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v1
