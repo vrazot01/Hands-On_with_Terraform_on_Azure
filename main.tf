@@ -1,14 +1,14 @@
 terraform {
   required_providers {
     azurerm = {
-      source  = "hashicorp/azurerm"
+       source  = "hashicorp/azurerm"
       version = "~>3.43.0"
     }
   }
   cloud {
     organization = "jan2025training"
     workspaces {
-      name = "remotestate"
+      name = "TerraformCI"
     }
   }
 }
